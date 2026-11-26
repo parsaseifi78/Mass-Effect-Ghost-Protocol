@@ -33,26 +33,11 @@ The original Resurrection project remains available at [Mass Effect Infiltrator:
 
 ## Install
 
-1. Copy the APK from `/sdcard/Download/Ghost Protocol/` to the device.
+1. Download Apk from to the device.
 2. Open it and install. The package is `com.ghost.protocol`, so it can sit beside the Resurrection build.
 3. Launch **Ghost Protocol**. No account, network connection, or EA Online dependency is required.
 
 Current build line: **v7.13.47**, `versionCode 153`.
-
----
-
-## Controls
-
-| Action | Touch / mouse | Keyboard | Gamepad |
-| --- | --- | --- | --- |
-| Move / aim | Bottom-centre fire pad | WASD + pointer | Left + right sticks |
-| Fire | Fire pad | Mouse click | RT |
-| Biotics | Drag top-left circle onto a slot and release | `E` / `1`–`3` | Face buttons |
-| Weapon wheel | Top-right weapon panel | `Q` | D-pad |
-| Cloak | Bottom-right button, always | `C` | Shoulder button |
-| Melee | Compact right-side button | `F` | Face button |
-| GitHub picker | Top-left circle/triangle on the title screen | `G` | Menu Back / interact |
-| Exit | Bottom-right `×` on the title screen | `Esc` | Menu Back |
 
 ---
 
