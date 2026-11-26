@@ -1,0 +1,60 @@
+# Gradle / Android build outputs
+.gradle/
+build/
+**/build/
+!**/src/**/build/
+.gradle-app.setting
+gradle-app.setting
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+.navigation/
+
+# APK / AAB / compiled artifacts
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.so
+*.o
+*.a
+
+# Java
+hs_err_pid*
+replay_pid*
+
+# Kotlin
+.kotlin/
+*.kotlin_module
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# signing keys (never commit release keystores)
+*.jks
+*.keystore
+!debug.keystore
+
+# Signing material and Python caches
+keys/
+__pycache__/
+*.pyc
+
+# Logs / temporary files
+*.log
+*.tmp
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#05080c">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>MASS EFFECT: GHOST PROTOCOL 3D</title>
+<style>
+@font-face{font-family:Eurostile;src:url('assets/EurostileLTStd.ttf')}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;height:100%;background:#05080c;overflow:hidden;font-family:Eurostile,Arial,sans-serif;color:#dfefff;position:fixed;inset:0;overscroll-behavior:none}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+canvas{display:block;position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+#gl{z-index:1}#ui{z-index:2}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="ui"></canvas>
+
+<script>
+(function(){
+  function go(){var d=document.documentElement,r=d.requestFullscreen||d.webkitRequestFullscreen||d.msRequestFullscreen;if(r){try{r.call(d);}catch(e){}}}
+  ['pointerdown','touchstart','mousedown','keydown'].forEach(function(ev){window.addEventListener(ev,function(){go();},{once:true,passive:true});});
+})();
+</script>
+<script src="assets/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

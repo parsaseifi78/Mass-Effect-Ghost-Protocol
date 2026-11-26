@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mass Effect: Ghost Protocol.</title>
+<meta name="description" content="A fan-made 3D sequel to Mass Effect Infiltrator: Resurrection for modern Android, built with three.js r160.">
+<style>
+  :root{--bg:#040611;--panel:#101329;--cyan:#78f2ff;--violet:#b79bff;--amber:#ffc06a;--ink:#f2f4ff;--muted:#a9b1d0}
+  *{box-sizing:border-box}
+  body{margin:0;background:
+       radial-gradient(circle at 14% 8%,#26305e 0,transparent 36%),
+       radial-gradient(circle at 86% 72%,#3b1d59 0,transparent 40%),var(--bg);
+       color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+  a{color:var(--cyan)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  header{padding:26px 0 8px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+  .mark{width:38px;height:38px;border:2px solid var(--violet);border-radius:50%;display:grid;place-items:center;
+        box-shadow:0 0 28px rgba(183,155,255,.5)}
+  .mark i{width:0;height:0;border-left:10px solid var(--ink);border-top:7px solid transparent;
+          border-bottom:7px solid transparent;margin-left:4px}
+  .pill{border:1px solid rgba(120,242,255,.45);border-radius:999px;padding:6px 13px;font-size:12px;color:var(--cyan)}
+  .hero{padding:72px 0 44px;text-align:center}
+  .hero h1{margin:0;font-size:clamp(32px,7vw,68px);line-height:1.04;letter-spacing:.03em}
+  .hero h1 span{color:var(--violet)}
+  .hero p{max-width:700px;margin:20px auto;color:var(--muted);font-size:clamp(16px,2.2vw,20px)}
+  .cta{display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+  .btn{border:1px solid var(--violet);border-radius:8px;padding:12px 20px;text-decoration:none;
+       color:#0b0618;background:var(--violet);font-weight:700}
+  .btn.alt{background:transparent;color:var(--cyan);border-color:var(--cyan)}
+  .note{max-width:780px;margin:26px auto 0;padding:14px 18px;border-left:3px solid var(--amber);
+        background:rgba(255,192,106,.08);color:#ffdda9;text-align:left;font-size:14px}
+  section{padding:36px 0;border-top:1px solid rgba(183,155,255,.18)}
+  h2{font-size:clamp(22px,3.6vw,32px);margin:0 0 20px;letter-spacing:.04em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px}
+  .card{background:linear-gradient(160deg,rgba(24,27,62,.92),rgba(7,9,24,.95));
+        border:1px solid rgba(183,155,255,.3);border-radius:12px;padding:20px}
+  .card h3{margin:0 0 8px;color:var(--violet);font-size:16px;letter-spacing:.06em}
+  .card p{margin:0;color:var(--muted);font-size:14px}
+  .stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+  .stat{border:1px solid rgba(120,242,255,.35);border-radius:10px;padding:12px 18px;min-width:150px}
+  .stat b{display:block;color:var(--ink);font-size:24px}
+  .stat small{color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-size:11px}
+  pre{overflow:auto;background:#050716;border:1px solid rgba(120,242,255,.25);border-radius:10px;padding:16px;color:#dfe9ff}
+  footer{padding:40px 0 60px;color:var(--muted);text-align:center;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="mark"><i></i></span> Ghost Protocol</div>
+    <span class="pill">v7.13.47 · three.js r160</span>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Mass Effect <span>Ghost Protocol.</span></h1>
+      <p>A fan-made 3D sequel to <em>Mass Effect Infiltrator: Resurrection</em>. Swipe biotics, cinematic bosses, a silent tactical HUD, and a fan-written story — built locally for modern Android, with no external assets.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/parsaseifi78/Mass-Effect-Ghost-Protocol">Open this repository</a>
+        <a class="btn alt" href="https://github.com/parsaseifi78/Mass-effect-infiltrater-Resurrection">Play the original Resurrection</a>
+      </div>
+      <p class="note">Unofficial, non-commercial fan tribute. Mass Effect and Infiltrator are trademarks of Electronic Arts and BioWare. No original game files, art, or audio are distributed here.</p>
+    </div>
+
+    <section>
+      <h2>Randall returns</h2>
+      <div class="grid">
+        <div class="card"><h3>Swipe-only biotics</h3><p>Drag the top-left circle onto a visible arc slot and release. The button itself never casts, and the three-slot wheel eases open before settling.</p></div>
+        <div class="card"><h3>Silent vitals</h3><p>No health or shield numbers. Bars lose colour saturation toward neutral steel as they fall, staying bright enough to read in combat.</p></div>
+        <div class="card"><h3>Health before shields</h3><p>150 health with regeneration starting one second after damage; shields wait three. The objective, morality, and vitals tiles share the minimap's height.</p></div>
+        <div class="card"><h3>Cinematic escalation</h3><p>Praetorian, Lancer, Juggernaut, and Director stages get their own entrances, abilities, cutscenes, and mission hand-offs.</p></div>
+        <div class="card"><h3>Local multiplayer</h3><p>Two-player co-op and PVP with FFA or Team A vs B. Choose one limited-use ability and one weapon before the round starts.</p></div>
+        <div class="card"><h3>Phone-first renderer</h3><p>Native Choreographer pacing with rAF fallback, 60/120 Hz snapping, capped DPR, no shadows, and adaptive render scale.</p></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>150</b><small>player health</small></div>
+        <div class="stat"><b>3</b><small>biotic slots</small></div>
+        <div class="stat"><b>8</b><small>practical PVP cap</small></div>
+        <div class="stat"><b>FA / EN</b><small>full UI languages</small></div>
+      </div>
+    </section>
+
+    <section id="install">
+      <h2>Install</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>From the phone</h3>
+          <p>Copy the APK from <code>/sdcard/Download/Ghost Protocol/</code> and open it. The package is <code>com.ghost.protocol</code>, so it installs alongside the Resurrection build.</p>
+        </div>
+        <div class="card">
+          <h3>From source</h3>
+          <pre>bash tools/build_apk.sh \
+  "/sdcard/Download/Ghost Protocol/Local.apk"</pre>
+          <p>The script assembles smali, packages assets, aligns, and signs with the project key.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Controls at a glance</h2>
+      <div class="grid">
+        <div class="card"><h3>GitHub picker</h3><p>Tap the top-left circle/triangle on the title screen, or press <code>G</code>, to choose between the Resurrection and Ghost Protocol repositories.</p></div>
+        <div class="card"><h3>Biotics</h3><p>Drag the top-left circle onto a slot and release. Keyboard: <code>E</code> or <code>1</code>–<code>3</code>.</p></div>
+        <div class="card"><h3>Cloak</h3><p>Bottom-right button, permanently mapped. Keyboard: <code>C</code>.</p></div>
+        <div class="card"><h3>Exit</h3><p>Title-screen <code>×</code> or <code>Esc</code> closes the app through the native bridge.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Presented with love by Parsa Seifi · Built with three.js r160 · No EA or BioWare assets included.
+  </footer>
+</div>
+</body>
+</html>
