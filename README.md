@@ -21,11 +21,11 @@ The original Resurrection project remains available at [Mass Effect Infiltrator:
 
 ## Install
 
-1. Download Apk from https://drive.google.com/file/d/1kaejl2R4JNs_0w0AQzxjXKiagJHTutVo/view?usp=drivesdk to the device.
-2. Open it and install. The package is `com.ghost.protocol`, so it can sit beside the Resurrection build.
-3. Launch **Ghost Protocol**. No account, network connection, or EA Online dependency is required.
+1. Download Apk from https://drive.google.com/file/d/1r4a6yiNWRqYWF1PaN7qm6IDBrYnLnN2A/view?usp=drivesdk to the device.
+3. Open it and install. The package is `com.ghost.protocol`, so it can sit beside the Resurrection build.
+4. Launch **Ghost Protocol**. No account, network connection, or EA Online dependency is required.
 
-Current build line: **v7.13.47**, `versionCode 153`.
+Current build line: **v7.25.0**, `versionCode 166`.
 
 ---
 
