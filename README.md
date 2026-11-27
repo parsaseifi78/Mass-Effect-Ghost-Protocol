@@ -19,18 +19,6 @@ The original Resurrection project remains available at [Mass Effect Infiltrator:
 
 ---
 
-## What is in the sequel
-
-- A custom **three.js r160** renderer tuned for phones: capped DPR, no shadows, adaptive render scale, and native `Choreographer` frame pacing with rAF fallback.
-- Swipe-only **biotic wheel** with three visible slots; the biotic button itself never casts. The bottom-right button is permanently mapped to Cloak.
-- **150 health**, health regeneration before shields, and vitals bars that desaturate toward neutral steel instead of darkening.
-- A compact HUD: minimap, morality, objective panel, and vitals tile into one map-height stack with no health or shield numbers.
-- Cinematic Praetorian, Lancer, Juggernaut, and Director encounters, hand-written dialogue, and two sequel endings.
-- Full **English / Persian** UI and controller rebinding.
-- Local multiplayer: 2-player co-op and PVP with FFA or Team A vs B. One limited-use ability and one weapon before each round.
-
----
-
 ## Install
 
 1. Download Apk from https://drive.google.com/file/d/1kaejl2R4JNs_0w0AQzxjXKiagJHTutVo/view?usp=drivesdk to the device.
